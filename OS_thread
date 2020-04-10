@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<pthread.h>
+struct arg struct 
+{
+int arg1;
+int arg2;
+};
+void *arguments(void *arguments)
+{
+struct arg struct *args=arguments;
+printf("%d\n", args->arg1);
+printf("%d\n", args->arg2);
+pthread exit(NULL);
+}
